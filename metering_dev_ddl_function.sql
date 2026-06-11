@@ -36,7 +36,7 @@ CREATE TABLE readings (
 ) PARTITION BY RANGE (reading_date);
 
 
--- партиции на 2025-2026 годы (в продакшене создаются автоматически)
+-- партиции на 2025-2026 годы 
 CREATE TABLE readings_2025_12 PARTITION OF readings FOR VALUES FROM ('2025-12-01') TO ('2026-01-01');
 CREATE TABLE readings_2026_01 PARTITION OF readings FOR VALUES FROM ('2026-01-01') TO ('2026-02-01');
 CREATE TABLE readings_2026_02 PARTITION OF readings FOR VALUES FROM ('2026-02-01') TO ('2026-03-01');
