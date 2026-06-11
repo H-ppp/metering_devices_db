@@ -17,7 +17,7 @@
 
 ```bash
 git clone <REPO_URL>
-cd meter-readings-db
+cd metering_devices_db
 ```
 
 
